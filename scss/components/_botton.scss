@@ -1,0 +1,143 @@
+/* Кнопка заказа услуги из секции герой*/
+.hero-button {
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--button);
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-hover);
+  }
+}
+/* Кнопки фильтров из списка кнопок портфолио*/
+.button__portfolio-btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  font-family: var(----main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-bg);
+  color: var(--basic-color);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--button);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button__btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+/* Кнопка футера*/
+.footer-button-subscribe {
+  display: flex;
+}
+.footer__button-subscribe {
+  margin-left: 12px;
+  width: 200px;
+  padding: 10px 62px 10px 29px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.footer__icon-send {
+  background-image: url('../images/icons/icon-send1.svg');
+  bottom: 50%;
+  left: 52px;
+  transform: translate(-52px, 50%);
+}
+/* Кнопка модального окна - закрыть*/
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal__icon-vector-btn {
+  color: #000000;
+  fill: currentColor;
+  transition: color 250ms var(--timing-function);
+
+  &:hover {
+    color: var(--accent-color-hover);
+  }
+
+  &:checked + .modal__btn-close::after {
+    color: var(--accent-color-hover);
+  }
+}
+
+/* Кнопка модального окна - заказать*/
+.modal-button-send {
+  padding: 10px 55px;
+  padding-right: auto;
+  margin-left: auto;
+  width: 200px;
+  min-width: 89px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

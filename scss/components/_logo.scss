@@ -1,0 +1,26 @@
+/* Ссылка с логотипом */
+/* Хедер */
+.accent {
+  color: var(--accent-color);
+}
+.logo {
+  padding: 24px 0px 25px;
+  color: var(--main-font);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* Футер */
+.footer-accent {
+  color: var(--accent-color);
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--logo-footer);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}

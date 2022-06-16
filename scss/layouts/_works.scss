@@ -1,0 +1,42 @@
+/* Чем мы занмаемся */
+.works-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  line-height: 1.17;
+  font-size: 36px;
+  text-align: center;
+  color: var(--basic-color);
+}
+.works-list {
+  display: flex;
+}
+.works-list__works-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: var(--filter-list-card);
+  }
+}
+.works-list__box-works-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.works-list__works-description {
+  margin-top: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  letter-spacing: 0.03em;
+}

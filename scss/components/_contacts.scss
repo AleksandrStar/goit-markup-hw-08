@@ -1,0 +1,98 @@
+/* Список контактов */
+/* Хедер */
+.contacts__header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts__header-list .contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+.contacts-header-list__contacts-email {
+  padding: 32px 0px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.contacts-header-list__contacts-phone {
+  padding: 32px 0px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  color: var(--secondary-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+/* Иконки конверта и смартфона*/
+.icon-header {
+  margin-right: 10px;
+  fill: currentColor;
+}
+/* Декорации ссылок шапки сайта (акцент нахождения на разделе) */
+.current {
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+}
+/* Футер */
+.contacts {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address-contacts {
+  margin-right: 70px;
+}
+.footer__footer-item {
+  width: 231px;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.footer__footer-contact {
+  line-height: 1.71;
+  font-weight: 400;
+  color: var(--contacts-list-footer);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+/* Почтовый адрес */
+.footer__footer-office {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--office);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

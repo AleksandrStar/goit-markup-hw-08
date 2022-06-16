@@ -1,0 +1,27 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* Цвет текста */
+  --basic-color: #212121;
+  --secondary-color: #757575;
+  --logo-color: #000000;
+  --logo-footer: #ffffff;
+  --contacts-footer: #ffffff;
+  --contacts-list-footer: rgba(255, 255, 255, 0.6);
+  --title: #ffffff;
+  --button: #ffffff;
+  --office: #ffffff;
+  --item: #ffffff;
+  /* Цвет фона */
+  --dark-bg: #2f303a;
+  --secondary-bg: #f5f4fa;
+  /* Акцент цвета текста и фона*/
+  --accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
+  /* Цвет линий*/
+  --card-line: #eeeeee;
+  /* Переменная зазоров между карточками*/
+  --filter-list-card: 30px;
+  /* Функция разделения времени в переходах*/
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,84 @@
+/* Соцыальные сети представителей нашей команды */
+.team-list__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-list__socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-list__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #afb1b8;
+  border-radius: 50%;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}
+.team-list__socials-icom {
+  fill: currentColor;
+}
+/* Соцыальные сети футера */
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #afb1b8;
+  border-radius: 50%;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}
+.footer__socials-icom {
+  fill: currentColor;
+}
+.footer__socials-footer {
+  display: flex;
+  margin-top: 20px;
+}
+.footer__team-name {
+  font-weight: 700;
+  line-height: 1.14;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer__socials-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}

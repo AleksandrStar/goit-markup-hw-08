@@ -1,0 +1,39 @@
+/* Приемущества работы */
+.priority {
+  padding-bottom: 0px;
+}
+.priority-list {
+  display: flex;
+  justify-content: center;
+}
+.priority-item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: var(--filter-list-card);
+  }
+}
+.priority-item__subtitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.14;
+  font-size: 14px;
+  color: var(--basic-color);
+  text-transform: uppercase;
+}
+/* Иконки */
+.priority-item__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+/* Текстовый контент к приемуществам работы */
+.priority-item__text {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--secondary-color);
+}
