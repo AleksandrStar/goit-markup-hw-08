@@ -7,15 +7,20 @@
   color: var(--basic-color);
 }
 .klient-list {
+  display: flex;
   justify-content: center;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
+
 .klient-list__klient-item:not(:last-child) {
   margin-right: 30px;
 }
+
+@media screen and (min-width: 480px) {
+  .klient-list__klient-item {
+    flex-basis: 50%;
+  }
+}
+
 .klient-list__logo-klient {
   fill: currentColor;
 }
@@ -25,7 +30,7 @@
   align-items: center;
   background-color: #ffffff;
   color: #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

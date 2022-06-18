@@ -1274,24 +1274,24 @@ img {
 }
 
 .klient-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .klient-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 .klient-list__klient-item:not(:last-child) {
   margin-right: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .klient-list__klient-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
 .klient-list__logo-klient {
   fill: currentColor;
 }
@@ -1308,7 +1308,7 @@ img {
           align-items: center;
   background-color: #ffffff;
   color: #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
