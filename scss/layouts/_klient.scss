@@ -7,8 +7,11 @@
   color: var(--basic-color);
 }
 .klient-list {
-  display: flex;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .klient-list__klient-item:not(:last-child) {
   margin-right: 30px;

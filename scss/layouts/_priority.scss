@@ -3,37 +3,77 @@
   padding-bottom: 0px;
 }
 .priority-list {
-  display: flex;
   justify-content: center;
+  width: 450px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 354px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    width: 270px;
+  }
 }
 .priority-item {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: var(--filter-list-card);
+  width: 450px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: var(--filter-list-card);
+    }
   }
 }
 .priority-item__subtitle {
+  width: 270px;
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 1.14;
   font-size: 14px;
   color: var(--basic-color);
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 }
 /* Иконки */
 .priority-item__icon {
-  display: flex;
+  width: 450px;
   justify-content: center;
   align-items: center;
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 354px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    width: 270px;
+  }
 }
+
 /* Текстовый контент к приемуществам работы */
 .priority-item__text {
+  width: 450px;
   font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-color);
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 354px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    width: 270px;
+  }
 }
