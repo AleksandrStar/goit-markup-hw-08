@@ -1024,11 +1024,12 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   width: 450px;
+  height: 120px;
 }
 @media screen and (min-width: 768px) {
   .priority-list {
     display: block;
-    max-width: 354px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1062,6 +1063,14 @@ img {
 }
 
 .priority-item__subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 270px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -1072,11 +1081,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .priority-item__subtitle {
+    margin: 0;
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
   .priority-item__subtitle {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1085,14 +1096,12 @@ img {
 
 /* Иконки */
 .priority-item__icon {
-  width: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -1102,7 +1111,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1110,7 +1118,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 270px;
   }
 }
 
@@ -1138,10 +1145,14 @@ img {
 
 /* Чем мы занмаемся */
 .works-title {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
+  width: 376px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.17;
   font-size: 36px;
+  line-height: 1.17;
   text-align: center;
   color: var(--basic-color);
 }
@@ -1182,12 +1193,10 @@ img {
 .works-list__works-description {
   margin-top: 27px;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.03em;
 }
 
 /* Наша команда */
@@ -1196,25 +1205,62 @@ img {
 }
 
 .team-title {
-  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-style: normal;
+  width: 205px;
   font-weight: 700;
+  font-size: 28px;
   line-height: 1.17;
-  font-size: 36px;
   text-align: center;
   color: var(--basic-color);
 }
+@media (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+    width: 264px;
+    font-size: 36px;
+  }
+}
 
 .team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .team-list__team-item {
+  width: 450px;
   background-color: var(--item);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__team-item {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .team-list__team-item {
+    width: 270px;
+  }
 }
 .team-list__team-item:not(:last-child) {
   margin-right: var(--filter-list-card);
@@ -1222,7 +1268,12 @@ img {
 
 .team-list__team-descr {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media (min-width: 1200px) {
+  .team-list__team-descr {
+    padding-bottom: 30px;
+  }
 }
 
 /* Список имен представителей нашей команди */
@@ -1310,8 +1361,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-color: #ffffff;
   color: #afb1b8;
   width: 210px;
@@ -1330,8 +1379,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 226px;
     height: 92px;
   }

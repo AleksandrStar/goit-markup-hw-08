@@ -38,7 +38,6 @@
 }
 .klient-list__klient-link {
   display: flex;
-  flex-wrap: wrap;
   background-color: #ffffff;
   color: #afb1b8;
   width: 210px;
@@ -54,7 +53,6 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
     width: 226px;
     height: 92px;
   }

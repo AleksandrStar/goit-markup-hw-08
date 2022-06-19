@@ -5,9 +5,10 @@
 .priority-list {
   justify-content: center;
   width: 450px;
+  height: 120px;
   @media screen and (min-width: 768px) {
     display: block;
-    max-width: 354px;
+    width: 354px;
   }
   @media screen and(min-width: 1200px) {
     display: flex;
@@ -29,6 +30,10 @@
   }
 }
 .priority-item__subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -37,28 +42,26 @@
   color: var(--basic-color);
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
+    margin: 0;
     display: block;
   }
   @media screen and(min-width: 1200px) {
+    margin: 0;
     display: flex;
   }
 }
 /* Иконки */
 .priority-item__icon {
-  width: 450px;
   justify-content: center;
   align-items: center;
-  height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
   @media screen and (min-width: 768px) {
     display: flex;
-    max-width: 354px;
   }
   @media screen and(min-width: 1200px) {
     display: flex;
-    width: 270px;
   }
 }
 
